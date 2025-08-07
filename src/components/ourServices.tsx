@@ -21,7 +21,7 @@ const OurServices: React.FC = () => {
     >
       {/* Capa 1: La imagen de fondo. 'speed' controla la velocidad del parallax. */}
       <ParallaxBannerLayer
-        image="/Imagen5.webp" // Usa tu imagen optimizada
+        image="/Imagen5.jpg" // Usa tu imagen optimizada
         speed={-20} // Un valor negativo hace que se mueva hacia arriba más lento que el scroll
         className="brightness-50" // Oscurece la imagen para el contraste
       />

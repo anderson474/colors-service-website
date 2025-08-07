@@ -3,7 +3,7 @@ import { Playfair_Display, Montserrat } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/footer'
 import BotonWhatsApp from '@/components/botonWhatsApp'
-
+import ParallaxWrapper from '@/components/parallaxWrapper'
 // Configuración de las fuentes
 const playfair = Playfair_Display({ 
   subsets: ['latin'],
@@ -29,9 +29,12 @@ export default function RootLayout({
     <html lang="en">
       {/* Aplicamos las variables de fuente al body */}
       <body className={`${playfair.variable} ${montserrat.variable} font-sans`}>
-        {children}
-        <Footer/>
-        <BotonWhatsApp />
+        <ParallaxWrapper>
+          {children}
+          <Footer/>
+          <BotonWhatsApp />
+        </ParallaxWrapper>
+        
       </body>
     </html>
   )
