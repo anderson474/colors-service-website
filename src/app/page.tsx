@@ -3,7 +3,6 @@ import WhyChooseUs from '@/components/whyChooseUs';
 import OurServices from '@/components/ourServices';
 import ProjectGallery from '@/components/projectGallery';
 import Testimonials from '@/components/testimonials';
-import ContactForm from '@/components/contactForm';
 import ColorPalette from '@/components/colorPalette';
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
       <ProjectGallery />
       <Testimonials />
       <ColorPalette />
-      <ContactForm />
+      
     </main>
   );
 }

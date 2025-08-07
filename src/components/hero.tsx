@@ -6,7 +6,8 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center text-white">
+    <section className="relative h-screen flex items-center 
+    justify-center text-center text-white">
       {/* Fondo con imagen */}
       <Image
         src="/Imagen1.jpg" // Usa una de tus imágenes de alta calidad
@@ -34,15 +35,12 @@ const Hero: React.FC = () => {
         <p className="font-sans text-lg md:text-xl max-w-2xl mx-auto mb-8">
           Professional residential and commercial painting services in Boston, MA.
         </p>
-        <div className="flex justify-center gap-4">
-          <a href="#contact" className="text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all">
-            Get a Free Quote
-          </a>
+        
+          
           <a href="#gallery" className="border-2 border-white text-white 
           font-bold py-3 px-8 rounded-full hover:bg-white hover:text-navy transition-all">
             View Our Work
           </a>
-        </div>
       </div>
     </section>
   );

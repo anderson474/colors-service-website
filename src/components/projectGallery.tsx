@@ -7,7 +7,10 @@ const images = [
   { src: '/Imagen6.jpg', alt: 'House facade in Beacon Hill' },
   { src: '/Imagen7.jpg', alt: 'Modern living room finish' },
   { src: '/Imagen10.jpg', alt: 'Bedroom painting service' },
-  { src: '/Imagen3.jpg', alt: 'Commercial exterior painting' },
+  { src: '/Imagen8.jpg', alt: 'Commercial exterior painting' },
+  { src: '/Imagen9.jpg', alt: 'Bathroom' },
+  { src: '/Imagen11.jpg', alt: 'Outside' },
+
 ];
 
 const ProjectGallery: React.FC = () => {

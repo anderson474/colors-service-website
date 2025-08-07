@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Montserrat } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/footer'
+import BotonWhatsApp from '@/components/botonWhatsApp'
 
 // Configuración de las fuentes
 const playfair = Playfair_Display({ 
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${montserrat.variable} font-sans`}>
         {children}
         <Footer/>
+        <BotonWhatsApp />
       </body>
     </html>
   )
