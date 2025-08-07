@@ -1,4 +1,8 @@
+// src/components/OurServices.tsx
+"use client"; // También necesita ser un componente de cliente.
+
 import React from 'react';
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 
 const services = [
   "Interior & Exterior Painting",
@@ -10,32 +14,37 @@ const services = [
 
 const OurServices: React.FC = () => {
   return (
-    // 1. Contenedor principal. Hacemos que sea 'relative' para posicionar el fondo.
-    <section className="relative">
+    // Usamos ParallaxBanner como contenedor principal de la sección.
+    <ParallaxBanner
+      style={{ aspectRatio: '2 / 1', height: 'auto' }} // Define la proporción o altura de la sección
+      className="relative"
+    >
+      {/* Capa 1: La imagen de fondo. 'speed' controla la velocidad del parallax. */}
+      <ParallaxBannerLayer
+        image="/Imagen5.webp" // Usa tu imagen optimizada
+        speed={-20} // Un valor negativo hace que se mueva hacia arriba más lento que el scroll
+        className="brightness-50" // Oscurece la imagen para el contraste
+      />
 
-      {/* 2. Div para el fondo con efecto parallax */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed brightness-50"
-        style={{ backgroundImage: "url('/Imagen5.jpg')" }} // Elige una de tus imágenes
-      >
-        {/* Este div está vacío, solo sirve como capa de fondo */}
-      </div>
-
-      {/* 3. Contenedor del contenido. Debe ser 'relative' y tener un z-index mayor que el fondo */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center py-20">
-        <h2 className="font-serif text-4xl md:text-5xl mb-12 text-white">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map(service => (
-            // Las tarjetas de servicio ahora tienen un fondo semi-transparente para integrarse mejor
-            <div key={service} className="bg-white/20 backdrop-blur-sm p-8 rounded-lg shadow-2xl hover:shadow-2xl
-             transition-shadow duration-300">
-              <h3 className="font-extralight text-2xl text-white">{service}</h3>
+      {/* Capa 2: El contenido. Lo ponemos en una capa superior. */}
+      <ParallaxBannerLayer>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="font-serif text-4xl md:text-5xl mb-12 text-white">Our Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map(service => (
+                <div 
+                  key={service} 
+                  className="bg-white/20 backdrop-blur-sm p-8 rounded-lg shadow-2xl hover:shadow-2xl transition-shadow duration-300"
+                >
+                  <h3 className="font-serif text-xl md:text-2xl text-white">{service}</h3>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-
-    </section>
+      </ParallaxBannerLayer>
+    </ParallaxBanner>
   );
 };
 
