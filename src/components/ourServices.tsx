@@ -53,5 +53,5 @@ const OurServices: React.FC = () => {
     </section>
   );
 };
-
+// esta es la verga de teclado me encanta para programar es la maldita verga
 export default OurServices;

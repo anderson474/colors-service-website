@@ -16,8 +16,13 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Color Service - Painting Services in Boston, MA',
-  description: 'Professional residential and commercial painting services.',
+  // El title.template se usará en todas las páginas hijas
+  title: {
+    template: '%s | Color Service Painting',
+    default: 'Color Service Painting | Professional Painters in Boston, MA', // Título por defecto
+  },
+  description: 'Top-rated residential and commercial painting services in the Boston, MA area. Get a free quote today for interior and exterior painting projects.',
+  // Puedes añadir más metadata base aquí si quieres
 }
 
 export default function RootLayout({
