@@ -25,7 +25,7 @@ const images = [
 
 const ProjectGallery: React.FC = () => {
   return (
-    <section id="gallery" className="py-20 bg-white"> {/* Cambié el fondo para que resalte más */}
+    <section id="gallery" className="py-60 bg-white"> {/* Cambié el fondo para que resalte más */}
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-serif text-4xl md:text-5xl text-center mb-4 text-navy">Results That Speak for Themselves</h2>
         <p className="text-center text-lg mb-12 text-gray-500">Showcasing our work in Back Bay, Cambridge, Beacon Hill, and beyond.</p>

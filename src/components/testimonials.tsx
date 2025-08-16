@@ -3,7 +3,7 @@ import React from 'react';
 const Testimonials: React.FC = () => {
   return (
     // 1. Contenedor principal para el posicionamiento relativo
-    <section className="relative py-20">
+    <section className="relative py-60">
 
       {/* 2. Fondo con efecto parallax. Se coloca en una capa inferior (z-0) */}
       <div 
