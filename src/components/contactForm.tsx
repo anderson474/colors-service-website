@@ -44,7 +44,7 @@ const ContactForm: React.FC = () => {
           Contact us
         </h2>
         <p className="mt-4 text-lg text-center text-gray-200">
-          Ready to bring your ideas to life with color? Leave your details below, and we'll get in touch.
+          Ready to bring your ideas to life with color? Leave your details below, and we will get in touch.
         </p>
         <form ref={formRef} action={handleSubmit} className="mt-9 grid grid-cols-1 gap-y-6">
           <div>
