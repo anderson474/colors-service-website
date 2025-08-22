@@ -4,6 +4,7 @@ import OurServices from '@/components/ourServices';
 import ProjectGallery from '@/components/projectGallery';
 import Testimonials from '@/components/testimonials';
 import ColorPalette from '@/components/colorPalette';
+import ContactForm from '@/components/contactForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,12 +14,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className='bg-white -z-50'>
       <Hero />
       <WhyChooseUs />
       <OurServices />
       <ProjectGallery />
       <Testimonials />
+      <ContactForm/>
       <ColorPalette />
       
     </main>

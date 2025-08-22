@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         alt="Elegant painted wall"
         layout="fill"
         objectFit="cover"
-        className="z-[-1] brightness-50" // oscurece la imagen para que el texto resalte
+        className="z-5 brightness-50" // oscurece la imagen para que el texto resalte
       />
       
       <div className="z-10 p-6">
