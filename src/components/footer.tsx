@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
         {/* Sección de Contacto */}
         <div className="flex flex-col gap-2">
           <h4 className="font-serif text-xl text-gold mb-2">Contact us</h4>
-          <p>📞(123) 456-7890</p>
+          <p>📞+1 (857) 246-2445</p>
           <p>📍Boston, MA</p>
-          <p>Licencia #12345</p>
+          {/* <p>Licencia #12345</p> */}
         </div>
 
         {/* Sección de Redes Sociales */}
